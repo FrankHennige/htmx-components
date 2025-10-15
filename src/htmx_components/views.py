@@ -38,7 +38,7 @@ class Fullscreen(Enum):
 
 class Modal:
     size: ModalSize = ModalSize.LARGE
-    title: str | None = _("Form")
+    title: str | None = _("Form")  # type: ignore
     element_id: str = "modal"
     fullscreen: Fullscreen = Fullscreen.SMALL
     scrollable: bool | None = None
@@ -48,13 +48,19 @@ class Modal:
         for key, value in kwargs.items():
             if key in self.__annotations__ and value is not None:
                 annotation = self.__annotations__[key]
-                enum_type = annotation if isinstance(annotation, type) and issubclass(annotation, Enum) else None
+                enum_type = (
+                    annotation
+                    if isinstance(annotation, type) and issubclass(annotation, Enum)
+                    else None
+                )
                 if enum_type and isinstance(value, str):
                     try:
                         value = enum_type(value)
                     except ValueError:
                         valid_values = [e.value for e in enum_type]
-                        raise ValueError(f"Invalid value for {key}: {value}. Must be one of {valid_values}")
+                        raise ValueError(
+                            f"Invalid value for {key}: {value}. Must be one of {valid_values}"
+                        )
             setattr(self, key, value)
 
     @property
