@@ -62,7 +62,7 @@ tag_format = "v{version}"
 upload_to_pypi = true
 upload_to_release = true
 version_variable = [
-    "src_folder/__init__.py:__version__",
+    # "src_folder/__init__.py:__version__",
     "pyproject.toml:version"
 ]
 
