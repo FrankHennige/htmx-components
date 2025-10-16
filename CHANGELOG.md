@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.1.4 (2025-10-16)
+
+### Bug Fixes
+
+- Build
+  ([`17aa879`](https://github.com/FrankHennige/htmx-components/commit/17aa879aebe8b3955a1b51face5872bc6014ebbe))
+
+
 ## v0.1.3 (2025-10-16)
 
 ### Bug Fixes
