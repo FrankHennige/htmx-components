@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.1.7 (2025-10-16)
+
+### Bug Fixes
+
+- Bumping
+  ([`9a6f27d`](https://github.com/FrankHennige/htmx-components/commit/9a6f27da47989311af0465778ca51cf94aafae6d))
+
+
 ## v0.1.6 (2025-10-16)
 
 ### Bug Fixes
