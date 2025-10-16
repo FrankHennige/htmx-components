@@ -1,4 +1,5 @@
 """Views for HTMX components."""
+
 from enum import Enum
 from typing import Any
 
