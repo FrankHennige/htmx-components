@@ -44,6 +44,12 @@ test = [
 [project.optional-dependencies]
 build = ["uv ~= 0.8.24"]
 
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+htmx_components = ["*.html"]
+
 [tool.semantic_release]
 build_command = """
     python -m pip install -e '.[build]'
