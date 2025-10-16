@@ -758,7 +758,7 @@ wheels = [
 
 [[package]]
 name = "htmx-components"
-version = "0.0.1"
+version = "0.1.6"
 source = { virtual = "." }
 dependencies = [
     { name = "django-htmx" },
