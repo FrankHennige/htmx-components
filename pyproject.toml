@@ -44,7 +44,6 @@ test = [
 build = ["uv ~= 0.8.24"]
 
 [tool.semantic_release]
-#build_command = "python -m build --sdist --wheel ."
 build_command = """
     python -m pip install -e '.[build]'
     uv lock --upgrade-package "$PACKAGE_NAME"
@@ -58,9 +57,14 @@ commit_parser = "conventional"
 logging_use_named_masks = false
 major_on_zero = true
 allow_zero_version = true
-# repo_dir = "."
 no_git_verify = false
 tag_format = "v{version}"
+upload_to_pypi = true
+upload_to_release = true
+version_variable = [
+    "src_folder/__init__.py:__version__",
+    "pyproject.toml:version"
+]
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"
