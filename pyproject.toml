@@ -44,7 +44,7 @@ test = [
 # build = ["uv ~= 0.8.24"]
 
 [tool.semantic_release]
-build_command = "python -m build --sdist --wheel ."
+#build_command = "python -m build --sdist --wheel ."
 #build_command = """
 #    python -m pip install -e '.[build]'
 #    uv lock --upgrade-package "$PACKAGE_NAME"
