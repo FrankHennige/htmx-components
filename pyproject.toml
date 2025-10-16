@@ -65,7 +65,7 @@ insertion_flag = "<!-- version list -->"
 template_dir = "templates"
 
 [tool.semantic_release.changelog.default_templates]
-#Schangelog_file = "CHANGELOG.md"
+changelog_file = "CHANGELOG.md"
 output_format = "md"
 mask_initial_release = true
 
