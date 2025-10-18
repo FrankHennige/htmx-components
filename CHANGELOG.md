@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.1.9 (2025-10-18)
+
+### Bug Fixes
+
+- Add HTML into the build
+  ([`9517a01`](https://github.com/FrankHennige/htmx-components/commit/9517a016f07b2b350b0e3983a5cc66c5ec28a751))
+
+
 ## v0.1.8 (2025-10-16)
 
 ### Bug Fixes
